@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  #contact.div4
+  section#section4
+    .row
+      #formcolumn.col-lg-4.col-lg-offset-4.col-md-4.col-md-offset-4.col-sm-6.col-sm-offset-3.col-xs-12
+        h3.text-uppercase.text-center.divheaders Contact me
+        p.text-center.para(style='font-family:Lato, sans-serif;') Responses are usually within 24 hours
+        p.text-center.para(style='font-family:Lato, sans-serif;') Fields asteriked (*) are to be filled compulsorily
+        h4.text-left.formtext(style='font-family:Lato, sans-serif;') First Name* 
+        form(action='contact/send', method='post')
+          input.form-control.input-lg.forminput(type='text', name='firstname', required='')
+          h4.text-left.formtext(style='font-family:Lato, sans-serif;') Surname* 
+          input.form-control.input-lg.forminput(type='text', name='surname', required='')
+          h4.text-left.formtext(style='font-family:Lato, sans-serif;') Email Address* 
+          input.form-control.input-lg.forminput(type='email', name='email', required='')
+          h4.text-left.formtext(style='font-family:Lato, sans-serif;') Phone Number* 
+          input.form-control.input-lg.forminput(type='tel', name='phone', required='')
+          h4.text-left.formtext(style='font-family:Lato, sans-serif;') Project Type* 
+          select.form-control.input-lg(name='projecttype')
+            option(value='Web Development', selected='') Web Development
+            option(value='Digital Marketing') Digital Marketing
+            option(value='Web Development and Digital Marketing') Web Development and Digital Marketing
+          h4.text-left.formtext(style='font-family:Lato, sans-serif;') Message* 
+          textarea.form-control.input-lg.forminput(rows='10', cols='35', name='message', required='')
+          button.btn.btn-success.btn-lg.contactbutton(type='submit') Send Message

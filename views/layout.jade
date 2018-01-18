@@ -1,0 +1,56 @@
+doctype html
+html
+  head
+    title WinP Original
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='fonts/font-awesome.min.css')
+    link(rel='stylesheet', href='fonts/material-icons.min.css')
+    link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css',)
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Raleway')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Share+Tech+Mono')
+    link(rel='stylesheet', href='stylesheets/styles.min.css')
+  body
+    div
+    nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          a.navbar-brand(href='/', style='font-family:Raleway, sans-serif;font-size:39px;color:rgb(255,255,255);') win.P 
+          button.navbar-toggle.collapsed(data-toggle='collapse', data-target='#navcol-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+        #navcol-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li(class=(title === 'home' ? 'active' : ''))
+                a(href='/') Home
+            li(class=(title === 'about' ? 'active' : ''))
+                a(href='/about') About Me
+            li(class=(title === 'portfolio' ? 'active' : ''))
+                a(href='/portfolio')  Portfolio
+            li(class=(title === 'contact' ? 'active' : ''))
+                a(href='/contact') Contact
+   block content
+   .footer
+      a(href='https://www.facebook.com/praiseobende', target='_blank')
+        i.fa.fa-facebook-official.icons
+      a(href='https://twitter.com/praiseobende')
+        i.fa.fa-twitter-square.icons
+      a(href='https://www.instagram.com/pr1ise/')
+        i.fa.fa-instagram.icons
+      a(href='https://www.linkedin.com/in/praise-obende-67968525/')
+        i.fa.fa-linkedin-square.icons
+      .div5
+        section
+          p.text-center.footerparagraph
+            | Designed by Win.P. Copyright 
+            i.material-icons copyright
+            |  2017
+    script(src='javascripts/jquery.min.js')
+    script(src='javascripts/bootstrap.min.js')
